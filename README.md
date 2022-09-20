@@ -17,3 +17,7 @@ Ejecutará el batch que contiene el comando de ejecución de flask
 pip install -r requirements.txt
 ```
 Instalará las librerías faltantes
+
+## Para ejecución del servidor
+1. Oprimir CTRL + C
+2. Escribir s a la pregunta que solicita
