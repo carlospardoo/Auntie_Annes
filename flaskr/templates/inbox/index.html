@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Messages{% endblock %}</h1>
+  {% if g.user %}
+    <a class="action" href="{{ url_for('inbox.create') }}">New Menssage</a>
+    <a class="action" href="{{ url_for('inbox.received') }}">received Message</a>
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  <h2>Plataforma de mensajería electrónica para enviar mensajes entre sus empleados.</h2>
+    <pr>  Para poder acceder a la plataforma, el usuario final deberá registrarse en la misma suministrando </pr>
+      <div>los siguientes datos:</div>
+      <li>Nombre de usuario.</li>
+      <li>Correo electrónico.</li>
+      <li>Contraseña.</li>
+
+  <h3> Si es la primera vez que ingresas a nuestra pagina presiona en Registro</h3>
+  <h3> Ya estas registrado ingresa por Login</h3>
+{% endblock %}
